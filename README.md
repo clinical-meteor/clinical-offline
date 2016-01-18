@@ -1,5 +1,5 @@
 ## clinical:offline
-Layout templates with keybindings and animations.
+Offline data persistence for Clinical Meteor apps.
 
 ===============================
 #### Installation

@@ -1,7 +1,7 @@
 Package.describe({
   name: 'clinical:offline',
   version: '0.0.1',
-  summary: '',
+  summary: 'Offline data persistence for Clinical Meteor apps.',
   git: 'https://github.com/clinical-meteor/clinical-offline',
   documentation: 'README.md'
 });
@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
 
-  api.use('ground:db');
+  api.use('ground:db@0.3.14');
   api.addFiles('offline.js');
 });
 
