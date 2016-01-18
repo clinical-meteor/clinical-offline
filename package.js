@@ -8,11 +8,13 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
+
+  api.use('ground:db');
   api.addFiles('offline.js');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('clinical:offline');
-  api.addFiles('offline-tests.js');
+  api.addFiles('tests/gagarin/offline.js');
 });
